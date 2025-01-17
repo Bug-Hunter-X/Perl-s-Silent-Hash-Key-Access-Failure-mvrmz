@@ -1,0 +1,3 @@
+This repository demonstrates a common, yet subtle, error in Perl involving hash key access.  When accessing a hash key that doesn't exist, Perl silently returns undef.  This can be problematic because undef can lead to unexpected behavior in conditional statements and other parts of your code.
+
+The `bug.pl` file showcases the problem: accessing a non-existent key returns undef without warning.  The `bugSolution.pl` file demonstrates how to safely handle this scenario, explicitly checking for the key's existence before attempting to access its value.
